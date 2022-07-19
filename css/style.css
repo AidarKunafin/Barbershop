@@ -96,6 +96,59 @@ img {
     background-color: var(--basic-extra-light) ;
 }
 
+.page-catalog {
+}
+
+.page-catalog .page-title {
+}
+
+.page-catalog .breadcrumbs{
+}
+
+/*Filters*/
+
+.filters{
+    width: 180px;
+}
+
+.filters h2{ 
+    display: none;
+}
+
+.filter fieldset{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.filter fieldset:first-child{
+    margin-bottom: 35px;
+}
+
+.filter legend{
+    margin-bottom: 26px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.filter ul{ 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 18px;
+}
+
+.filter-option{
+    margin-bottom: 19px;
+    padding-left: 45px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label{
+    color: var(--special);
+}
+
 .page-catalog .page-title{
     grid-column: 1/-1;
 }
@@ -116,6 +169,15 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.list-products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    list-style: none;
 }
 
 .list-products a{
@@ -160,7 +222,7 @@ color: inherit;
 
 
 .main-header-logo {
-    order: 1;
+    order: 0;
     justify-self: center;
 }
 
@@ -319,13 +381,29 @@ color: inherit;
 
 /*Products*/
 
+.list{
+}
+
+
 .product-photo-full, .product-foto-list{
     box-shadow: 0 0 10px var(--basic-dark);
 }
 
 .list-item{
+    width: 220px;
+    min-height: 285px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     background-color: var(--basic-white);
     box-shadow: 0 0 10px var(--basic-dark);
+}
+
+.list-item p{
+    background-color: #fff;
+}
+
+.list-item:nth-child(3n){
+    margin-right: 0;
 }
 
 .list-page{
@@ -336,6 +414,28 @@ color: inherit;
     color: inherit;
 }
 
+.catalog-category{
+    display: block;
+    text-transform: none;
+}
+
+.catalog-item-image {
+    width: 220px;
+    height: 165px;
+    margin: 0;
+}
+
+
+.catalog-item-price {
+    display: flex;
+    margin: 15px;
+    margin-top: 0;
+}
+
+.catalog-item-price b{
+    background-color: gray;
+    align-items: center;
+}
 
 /*Contacts*/
 
